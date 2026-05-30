@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>法学研究平台入口</title>
+  <style>
+    :root{--navy:#123055;--blue:#2f69e1;--accent:#e86c3a;--ink:#10213c;--muted:#64748b;--panel:#fff;--shadow:0 20px 46px rgba(16,33,60,.10)}
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#f6f9fc,#edf3f8);color:var(--ink)}.shell{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 40px}
+    .hero{padding:34px;border-radius:32px;background:linear-gradient(120deg,#123055,#22487c 62%,#2f69e1);color:#fff;box-shadow:0 24px 54px rgba(18,48,85,.24)}.hero h1{margin:18px 0 12px;font-size:clamp(32px,5vw,52px)}.hero p{max-width:780px;line-height:1.8;color:rgba(255,255,255,.86);margin:0}.eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;letter-spacing:.08em}
+    .actions,.cards,.stats{display:grid;gap:16px}.actions{grid-template-columns:repeat(2,max-content);margin-top:24px}.btn{padding:13px 18px;border-radius:14px;text-decoration:none;font-weight:700}.primary{background:linear-gradient(135deg,var(--accent),#f08a5d);color:#fff}.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.12)}
+    .stats{grid-template-columns:repeat(3,1fr);margin-top:24px}.stat{padding:16px;border-radius:18px;background:rgba(255,255,255,.10)}.stat strong{display:block;font-size:28px;margin-top:6px}
+    .cards{grid-template-columns:repeat(3,1fr);margin-top:24px}.card{background:var(--panel);border-radius:24px;box-shadow:var(--shadow);padding:22px;text-decoration:none;color:inherit}.card h2{margin:12px 0 10px;font-size:22px}.card p{margin:0;color:var(--muted);line-height:1.8}.num{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;font-weight:700}
+    @media (max-width:980px){.stats,.cards,.actions{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="eyebrow">LAW RESEARCH PLATFORM</div>
+      <h1>法学学科研究平台</h1>
+      <p>现在这套 demo 已经改成纯本地可运行版本，首页、主工作台、课题详情页和专家画像页都可以动态演示，适合直接展示选题分析流程。</p>
+      <div class="actions"><a class="btn primary" href="./workbench.html">进入主工作台</a><a class="btn secondary" href="./detail.html?title=平台算法歧视的司法救济研究">查看示例详情</a></div>
+      <div class="stats"><div class="stat">历史法学课题<strong>120</strong></div><div class="stat">法学专家画像<strong>24</strong></div><div class="stat">讲座关系数据<strong>56</strong></div></div>
+    </section>
+    <section class="cards">
+      <a class="card" href="./workbench.html"><div class="num">01</div><h2>主工作台</h2><p>输入多个法学选题，自动拆分候选课题并在散点图中高亮，支持筛选与双击跳转。</p></a>
+      <a class="card" href="./detail.html?title=跨境数据流动中的涉外法治协同研究"><div class="num">02</div><h2>课题详情页</h2><p>查看相似历史课题、推荐负责人和评审专家，适合做立项论证演示。</p></a>
+      <a class="card" href="./expert.html?name=陈知衡"><div class="num">03</div><h2>专家画像页</h2><p>查看专家参与课题时间线与学术合作网络，点击节点可继续浏览其他专家。</p></a>
+    </section>
+  </div>
+</body>
+</html>
